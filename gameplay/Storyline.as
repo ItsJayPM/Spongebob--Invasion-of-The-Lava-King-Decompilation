@@ -1,4 +1,4 @@
-package gameplay
+﻿package gameplay
 {
    import flash.display.*;
    import flash.events.*;
@@ -10,7 +10,7 @@ package gameplay
       private static var ScenarioSpeechIndex:int;
       
       private static var oPopupTextbox:PopupTextbox;
-      
+	  
       public static var oStorylineData:Object;
       
       public static const sSCENARIO_ID_TUTORIAL:String = "Tutorial";
@@ -26,8 +26,10 @@ package gameplay
       public static const sSCENARIO_ID_INTRO:String = "Intro";
       
       public static const sSCENARIO_ID_SQUIDWARD:String = "Squidward";
+	  
+	  [Embed(source="../xml/story.xml", mimeType="application/octet-stream")]
       
-      private static const StorylineXMLFile:Class = Storyline_StorylineXMLFile;
+      private static const StorylineXMLFile:Class;
       
       private static var fCallBack:Function;
       

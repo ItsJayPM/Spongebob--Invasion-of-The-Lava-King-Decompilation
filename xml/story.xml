@@ -1,0 +1,721 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<episode no="1">
+		<scenario id="Tutorial">
+			<speech id="1" next_id="2">
+				<text talker="Patrick">Welcome, adventurer! Lately, volcanic activity has increased near Bikini Bottom. The city needs your help!</text>
+				<text talker="SpongeBob">If Bikini Bottom needs my help, then I will rescue it!</text>
+				<text talker="Patrick">That's good to hear! It's bound to be dangerous, though. Take this sword to help you in your quest.</text>
+			</speech>
+			<speech id="2" next_id="2">
+				<text talker="Patrick"> Take this sword to help you in your quest.</text>
+			</speech>
+			<speech id="3" next_id="2">
+				<text talker="Patrick">The door is locked. You shouldn't leave without the sword, anyway.</text>
+			</speech>
+			<speech id="4" next_id="2">
+				<text talker="Patrick">Use the arrow keys to move. Just step on the sword to pick it up.</text>
+			</speech>
+			<speech id="5" next_id="6">	
+				<text talker="SpongeBob">Cool! I have acquired the level 1 sword! I can use it to cut seaweed. Thanks!</text>
+				<text talker="Patrick">You're welcome! There are a lot of dangerous foes out there. Fortunately, you now have a sword to defend yourself. Attack the intoxicated jellyfish by pressing the "A" key.</text>
+			</speech>
+			<speech id="6" next_id="6">
+				<text talker="Patrick">Attack the intoxicated jellyfish by pressing the "A" key.</text>
+			</speech>
+			<speech id="7" next_id="6">
+				<text talker="Patrick">The door is locked. You shouldn't leave without the sword, anyway.</text>
+			</speech>
+			<speech id="8" next_id="6">
+				<text talker="Patrick">Use the arrow keys to move. Just step on the sword to pick it up.</text>
+			</speech>
+			<speech id="9" next_id="10">
+				<text talker="Patrick">Good job! Defeated enemies sometimes drop useful items. In this case, it dropped a key that can be used to open doors and chests. Pick it up!</text>
+			</speech>
+			<speech id="10" next_id="10">
+				<text talker="Patrick">Go pick up the key!</text>
+			</speech>
+			<speech id="11" next_id="10">
+				<text talker="Patrick">You can't leave without the key.</text>
+			</speech>
+			<speech id="12" next_id="10">
+				<text talker="Patrick">Use the arrow keys to move. Just step on the key to pick it up.</text>
+			</speech>
+			<speech id="13" next_id="14">				
+				<text talker="Patrick">Blocks can be pushed out of the way by walking towards them. Blocks can only be moved 1 square, though, so plan your moves carefully. If you get stuck, you can reset the puzzle by returning to the previous room. Give it a try!</text>
+			</speech>
+			<speech id="14" next_id="14">
+				<text talker="Patrick">Don't give up. I'm sure you can do it.</text>
+			</speech>
+			<speech id="15" next_id="16">
+				<text talker="Patrick">Fantastic! Oh, one last thing before you go: you can access your inventory by pressing the space bar or the Inventory button.To open the menu, press "M" or the Menu button. Talk to me again to save your game. On your way now, hero!</text>
+			</speech>
+			<speech id="16" next_id="16">
+				<text talker="Patrick">As you advance further in the adventure, do not forget to come talk with me to save your progress. If you don't and then get beaten, you will lose all your progess.</text>
+			</speech>
+			<marker id="Welcome">1</marker>
+			<marker id="DoorNoSword">3</marker>
+			<marker id="IdleNoSword">4</marker>
+			<marker id="GetSword">5</marker>
+			<marker id="DoorNoKill">7</marker>
+			<marker id="IdleNoKill">8</marker>
+			<marker id="KillJellyfish">9</marker>
+			<marker id="DoorNoKey">11</marker>
+			<marker id="IdleNoKey">12</marker>
+			<marker id="StartBlock">13</marker>
+			<marker id="GiveUpBlock">14</marker>			
+			<marker id="PushBlock">15</marker>
+			<marker id="Save1stTime">16</marker>
+		</scenario>
+		<scenario id="Intro">
+			<speech id="1" next_id="1">
+				<text talker="Lava King">My spies say that a hero has taken upon himself to save Bikini Bottom.</text>
+				<text talker="Gazeous Rock">Don't worry yourself with this. I'll take care of him. A little gas will dry out his courage for sure.</text>
+				<text talker="Lava King">Me? Worried? Don't be a fool. Just take care of him... I have a city to blow up!</text>
+				<text talker="Gazeous Rock">Easy, I say. I'll huff and I'll puff and I'll blow...</text>
+				<text talker="Lava King">Oh, get on with it already!</text>
+			</speech>
+		</scenario>
+		<scenario id="Sandy">
+			<speech id="1" next_id="2">
+				<text talker="SpongeBob">Hi Sandy!</text>
+				<text talker="Sandy">Oh! Hi SpongeBob!</text>
+				<text talker="SpongeBob">What are you doing here?</text>
+				<text talker="Sandy">I'm studying the volcanic activity. Unfortunately, I've lost one of my tools. Do you think you can find it for me?</text>
+				<text talker="SpongeBob">No problem!</text>
+				<text talker="Sandy">Thanks! See you later then!</text>
+			</speech>
+			<speech id="2" next_id="2">
+				<text talker="Sandy">Don't forget to bring me my tool back.</text>
+			</speech>
+			<speech id="3" next_id="4">
+				<text talker="Sandy">Oh, thank you! Here is a reward for you!</text>
+				<text talker="SpongeBob">Nice! A health extension!</text>
+			</speech>
+			<speech id="4" next_id="4">
+				<text talker="Sandy">I don't need anything else for now, but thanks for asking!</text>
+			</speech>
+			<marker id="Tool">3</marker>
+		</scenario>
+		<scenario id="Squidward">
+			<speech id="1" next_id="1">
+				<text talker="Squidward">...</text>
+			</speech>
+			<speech id="2" next_id="3">
+				<text talker="Squidward">I had everything under control. It was all part of my plan.</text>
+				<text talker="SpongeBob">Nice! A health extension!</text>
+			</speech>
+			<speech id="3" next_id="3">
+				<text talker="Squidward">You should go, now.</text>
+			</speech>
+			<marker id="Saved">2</marker>
+		</scenario>
+		<scenario id="New">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">Cool! I have acquired the level 1 sword! I can use it to cut seaweed. Thanks!</text>
+				<text talker="Patrick">You're welcome! There are a lot of dangerous foes out there. Fortunately, you now have a sword to defend yourself. Attack the intoxicated jellyfish by pressing the "A" key.</text>
+			</speech> 
+			<speech id="2" next_id="2">
+				<text talker="SpongeBob">I've acquired the level 2 sword! I can use it to destroy coral.</text>
+			</speech>
+			<speech id="3" next_id="3">
+				<text talker="SpongeBob">I've acquired the level 1 shield! It's assigned to the "1" hotkey.</text>
+			</speech>
+			<speech id="4" next_id="4">
+				<text talker="SpongeBob">I've acquired the level 2 shield! It's assigned to the "2" hotkey..</text>
+			</speech>
+			<speech id="5" next_id="5">
+				<text talker="SpongeBob">I've acquired a sea urchin! It is a secondary weapon that I can throw by pressing "S". To switch secondary weapon, I have to select it in the inventory or press its hotkey. The sea urchin is assigned to the "3" hotkey. Its ammunitions are limited, so I must use it wisely.</text>
+			</speech>
+			<speech id="6" next_id="6">
+				<text talker="SpongeBob">I've acquired a volcanic sea urchin. I can use it to blow up rocks and some other surfaces. It's assigned to the "4" hotkey. Its ammunitions are limited, so I must use it wisely.</text>
+			</speech>
+			<speech id="7" next_id="7">
+				<text talker="SpongeBob">I've acquired the three-pronged fork! It's assigned to the "5" hotkey.</text>
+			</speech>
+			<speech id="8" next_id="8">				
+				<text talker="SpongeBob">I've acquired the boomerang! I can use it to collect otherwise unreachable items! It's assigned to the "6" hotkey.</text>
+			</speech>
+			<speech id="9" next_id="9">
+				<text talker="SpongeBob">I've acquired the magic wand! I can use it to solidify certain parts of the lava river! It's assigned to the "7" hotkey.</text>
+			</speech>
+			<speech id="10" next_id="10">
+				<text talker="SpongeBob">Map.</text>
+			</speech>
+			<speech id="11" next_id="11">
+				<text talker="SpongeBob">Aaa</text>
+			</speech>
+			<speech id="12" next_id="12">
+				<text talker="SpongeBob">I've acquired a health bottle. I can drink it by clicking on it in my inventory. It heals three hearts!</text>
+			</speech>
+			<speech id="13" next_id="13">
+				<text talker="SpongeBob">1 Money Unit.</text>
+			</speech>
+			<speech id="14" next_id="14">
+				<text talker="SpongeBob">5 Money Units.</text>
+			</speech>
+			<speech id="15" next_id="15">
+				<text talker="SpongeBob">10 Money Units.</text>
+			</speech>
+			<speech id="16" next_id="16">
+				<text talker="SpongeBob">Sandy Tool 1.</text>
+			</speech>
+			<speech id="17" next_id="17">
+				<text talker="SpongeBob">Sandy Tool 2.</text>
+			</speech>
+			<speech id="18" next_id="18">
+				<text talker="SpongeBob">Sandy Tool 3.</text>
+			</speech>
+			<speech id="19" next_id="19">
+				<text talker="SpongeBob">Great!</text>
+				<text talker="Patrick">The "A" key can also be used to talk to people or use a key. Walk over to the door and press the "A" key to unlock it.</text>
+			</speech>
+			<speech id="20" next_id="20">
+				<text talker="SpongeBob">I've acquired the first half of the boss' dungeon key!</text>
+			</speech>
+			<speech id="21" next_id="21">
+				<text talker="SpongeBob">I've acquired the second half of the boss' dungeon key!</text>
+			</speech>
+			<speech id="22" next_id="22">
+				<text talker="SpongeBob">I've acquired the boss' chamber key!</text>
+			</speech>
+			<speech id="23" next_id="23">
+				<text talker="SpongeBob">Health Container.</text>
+			</speech>
+			<speech id="24" next_id="24">
+				<text talker="SpongeBob">I've acquired Sandy's tool!</text>
+			</speech>
+			<marker id="1">1</marker>
+			<marker id="2">2</marker>
+			<marker id="3">3</marker>
+			<marker id="4">4</marker>
+			<marker id="5">5</marker>
+			<marker id="6">6</marker>
+			<marker id="7">7</marker>
+			<marker id="8">8</marker>
+			<marker id="9">9</marker>
+			<marker id="10">10</marker>
+			<marker id="11">11</marker>
+			<marker id="12">12</marker>
+			<marker id="13">13</marker>
+			<marker id="14">14</marker>
+			<marker id="15">15</marker>
+			<marker id="16">16</marker>
+			<marker id="17">17</marker>
+			<marker id="18">18</marker>
+			<marker id="19">19</marker>
+			<marker id="20">20</marker>
+			<marker id="21">21</marker>
+			<marker id="22">22</marker>
+			<marker id="23">23</marker>
+			<marker id="24">24</marker>
+		</scenario>
+		<scenario id="Boss">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">Victory!  Now to find my way to the next part of the Lava King’s domain.  There should be a door somewhere around here...</text>
+			</speech>
+		</scenario>
+		<!-- Special conditions -->
+		<scenario id="ChestKey">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I need a key to open this chest.</text>
+			</speech>
+		</scenario>
+		<scenario id="ChestKill">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I have to eliminate all enemies in the room for this chest to open.</text>
+			</speech>
+		</scenario>		
+		<scenario id="DoorKey">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I need a key to open this door.</text>
+			</speech>
+		</scenario>
+		<scenario id="DoorKill">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I have to eliminate all enemies in the room for this door to open.</text>
+			</speech>
+		</scenario>
+		<scenario id="DoorKillAndKey">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I have to eliminate all the enemies in the room and use a key to open this door.</text>
+			</speech>
+		</scenario>
+		<scenario id="DoorLair">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I need both halves of the key to open the boss's dungeon door. The other half is probably hidden in another dungeon.</text>
+			</speech>
+		</scenario>
+		<scenario id="DoorBoss">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">This is the boss's chamber. I need the boss's chamber key to open it. It should be hidden nearby.</text>
+			</speech>
+		</scenario>
+		<scenario id="NoMoney">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I need more money to buy that!</text>
+			</speech>
+		</scenario>
+		<scenario id="InventoryFull">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">Sorry! My inventory is full.</text>
+			</speech>
+		</scenario>
+		<scenario id="NoMoreItem">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I cannot hold any more of this item.</text>
+			</speech>
+		</scenario>
+		<scenario id="EpisodeDoor1">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">There is no door knob or key hole on this door! May be it automatically opens when I am done in this part of the world...</text>
+			</speech>
+		</scenario>
+		<scenario id="EpisodeDoor1Beaten">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">Terrific! I have completed the Episode 1 - The Forest. The adventure will continue on July 31st in the Reef!</text>
+			</speech>
+		</scenario>
+		<scenario id="EpisodeDoor2">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">There is no door knob or key hole on this door! May be it automatically opens when I am done in this part of the world...</text>
+			</speech>
+		</scenario>
+		<scenario id="EpisodeDoor2Beaten">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">Terrific! I have completed the Episode 2 - The Reef. The adventure will continue on August 28th in the Dead Lands!</text>
+			</speech>
+		</scenario>
+	</episode>
+	<episode no="2">
+		<scenario id="Intro">
+			<speech id="1" next_id="1">
+				<text talker="Lava King">That sponge is seriously getting on my nerves.</text>
+				<text talker="Sea Slug">A sponge, boss? It will be my stomach's pleasure to handle him.</text>
+				<text talker="Lava King">I expect no less! The time is drawing near and I don't want to be late.</text>
+				<text talker="Sea Slug">Sponges are my favorite snack, boss. I'll gobble him up in one quick bite. You'll see!</text>
+				<text talker="Lava King">You had better! Or *I* might just have a piece of *you*.</text>
+			</speech>
+		</scenario>
+		<scenario id="Sandy">
+			<speech id="1" next_id="2">
+				<text talker="SpongeBob">Hi Sandy!</text>
+				<text talker="Sandy">Oh! Hi SpongeBob!</text>
+				<text talker="SpongeBob">What are you doing here?</text>
+				<text talker="Sandy">I lost one of my tools on my way here. Do you think you could find it for me?</text>
+				<text talker="SpongeBob">No problem!</text>
+				<text talker="Sandy">Thanks! See you later then!</text>
+			</speech>
+			<speech id="2" next_id="2">
+				<text talker="Sandy">Don't forget to bring me my tool back.</text>
+			</speech>
+			<speech id="3" next_id="4">
+				<text talker="Sandy">Oh thank you! Here is a reward for you!</text>
+				<text talker="SpongeBob">Nice! A health extension!</text>
+			</speech>
+			<speech id="4" next_id="4">
+				<text talker="Sandy">I don't need anything else for now, but thanks for asking!</text>
+			</speech>
+			<marker id="Tool">3</marker>
+		</scenario>
+		<scenario id="Squidward">
+			<speech id="1" next_id="1">
+				<text talker="Squidward">...</text>
+			</speech>
+			<speech id="2" next_id="3">
+				<text talker="Squidward">I had everything under control. It was all part of my plan.</text>
+				<text talker="SpongeBob">Nice! A health extension!</text>
+			</speech>
+			<speech id="3" next_id="3">
+				<text talker="Squidward">You should go, now.</text>
+			</speech>
+			<marker id="Saved">2</marker>
+		</scenario>
+		<scenario id="New">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I've acquired the level 1 sword! I can use it to destroy seaweed.</text>
+				<text talker="Patrick">You're welcome! There are a lot of dangerous foes out there. Fortunately, you now have a sword to defend yourself. Attack the intoxicated jellyfish by pressing the "A" key.</text>
+			</speech>
+			<speech id="2" next_id="2">
+				<text talker="SpongeBob">I've acquired the level 2 sword! I can use it to destroy coral.</text>
+			</speech>
+			<speech id="3" next_id="3">
+				<text talker="SpongeBob">I've acquired the level 1 shield! It's assigned to the "1" hotkey.</text>
+			</speech>
+			<speech id="4" next_id="4">
+				<text talker="SpongeBob">I've acquired the level 2 shield! It's assigned to the "2" hotkey..</text>
+			</speech>
+			<speech id="5" next_id="5">
+				<text talker="SpongeBob">I've acquired a sea urchin! It is a secondary weapon that I can throw by pressing "S". To switch secondary weapon, I have to select it in the inventory or press its hotkey. The sea urchin is assigned to the "3" hotkey. Its ammunitions are limited, so I must use it wisely.</text>
+			</speech>
+			<speech id="6" next_id="6">
+				<text talker="SpongeBob">I've acquired a volcanic sea urchin. I can use it to blow up rocks and some other surfaces. It's assigned to the "4" hotkey. Its ammunitions are limited, so I must use it wisely.</text>
+			</speech>
+			<speech id="7" next_id="7">
+				<text talker="SpongeBob">I've acquired the three-pronged fork! It's assigned to the "5" hotkey.</text>
+			</speech>
+			<speech id="8" next_id="8">				
+				<text talker="SpongeBob">I've acquired the boomerang! I can use it to collect otherwise unreachable items! It's assigned to the "6" hotkey.</text>
+			</speech>
+			<speech id="9" next_id="9">
+				<text talker="SpongeBob">I've acquired the magic wand! I can use it to solidify certain parts of the lava river! It's assigned to the "7" hotkey.</text>
+			</speech>
+			<speech id="10" next_id="10">
+				<text talker="SpongeBob">Map.</text>
+			</speech>
+			<speech id="11" next_id="11">
+				<text talker="SpongeBob">Health Unit.</text>
+			</speech>
+			<speech id="12" next_id="12">
+				<text talker="SpongeBob">Health Bottle.</text>
+			</speech>
+			<speech id="13" next_id="13">
+				<text talker="SpongeBob">1 Money Unit.</text>
+			</speech>
+			<speech id="14" next_id="14">
+				<text talker="SpongeBob">5 Money Units.</text>
+			</speech>
+			<speech id="15" next_id="15">
+				<text talker="SpongeBob">10 Money Units.</text>
+			</speech>
+			<speech id="16" next_id="16">
+				<text talker="SpongeBob">Sandy Tool 1.</text>
+			</speech>
+			<speech id="17" next_id="17">
+				<text talker="SpongeBob">Sandy Tool 2.</text>
+			</speech>
+			<speech id="18" next_id="18">
+				<text talker="SpongeBob">Sandy Tool 3.</text>
+			</speech>
+			<speech id="19" next_id="19">
+				<text talker="SpongeBob">You've acquired a key.</text>
+			</speech>
+			<speech id="20" next_id="20">
+				<text talker="SpongeBob">I've acquired the first half of the boss' dungeon key!</text>
+			</speech>
+			<speech id="21" next_id="21">
+				<text talker="SpongeBob">I've acquired the second half of the boss' dungeon key!</text>
+			</speech>
+			<speech id="22" next_id="22">
+				<text talker="SpongeBob">I've acquired the boss' chamber key!</text>
+			</speech>
+			<speech id="23" next_id="23">
+				<text talker="SpongeBob">Health Container.</text>
+			</speech>
+			<speech id="24" next_id="24">
+				<text talker="SpongeBob">I've acquired Sandy's tool!</text>
+			</speech>
+			<marker id="1">1</marker>
+			<marker id="2">2</marker>
+			<marker id="3">3</marker>
+			<marker id="4">4</marker>
+			<marker id="5">5</marker>
+			<marker id="6">6</marker>
+			<marker id="7">7</marker>
+			<marker id="8">8</marker>
+			<marker id="9">9</marker>
+			<marker id="10">10</marker>
+			<marker id="11">11</marker>
+			<marker id="12">12</marker>
+			<marker id="13">13</marker>
+			<marker id="14">14</marker>
+			<marker id="15">15</marker>
+			<marker id="16">16</marker>
+			<marker id="17">17</marker>
+			<marker id="18">18</marker>
+			<marker id="19">19</marker>
+			<marker id="20">20</marker>
+			<marker id="21">21</marker>
+			<marker id="22">22</marker>
+			<marker id="23">23</marker>
+			<marker id="24">24</marker>
+		</scenario>
+		<scenario id="Boss">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">Victory!  Now to find my way to the next part of the Lava King’s domain.  There should be a door somewhere around here...</text>
+			</speech>
+		</scenario>
+		<!-- Special conditions -->
+		<scenario id="ChestKey">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I need a key to open this chest.</text>
+			</speech>
+		</scenario>
+		<scenario id="ChestKill">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I have to eliminate all enemies in the room for this chest to open.</text>
+			</speech>
+		</scenario>		
+		<scenario id="DoorKey">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I need a key to open this door.</text>
+			</speech>
+		</scenario>
+		<scenario id="DoorKill">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I have to eliminate all enemies in the room for this door to open.</text>
+			</speech>
+		</scenario>
+		<scenario id="DoorKillAndKey">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I have to eliminate all the enemies in the room and use a key to open this door.</text>
+			</speech>
+		</scenario>
+		<scenario id="DoorLair">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I need both halves of the key to open the boss's dungeon door. The other half is probably hidden in another dungeon.</text>
+			</speech>
+		</scenario>
+		<scenario id="DoorBoss">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">This is the boss's chamber. I need the boss's chamber key to open it. It should be hidden nearby.</text>
+			</speech>
+		</scenario>
+		<scenario id="NoMoney">
+			<speech id="1" next_id="1">
+				<text talker="Krab">You don't have enough money to buy this.</text>
+			</speech>
+		</scenario>
+		<scenario id="InventoryFull">
+			<speech id="1" next_id="1">
+				<text talker="Krab">Your inventory is full.</text>
+			</speech>
+		</scenario>
+		<scenario id="NoMoreItem">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I cannot hold any more of this item.</text>
+			</speech>
+		</scenario>
+		<scenario id="EpisodeDoor1">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">(TBD) I have to wait until (date) to access to this door.</text>
+			</speech>
+		</scenario>
+		<scenario id="EpisodeDoor2">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">(TBD) I have to wait until (date) to access to this door.</text>
+			</speech>
+		</scenario>
+		<!-- Text dungeon door -->
+	</episode>
+	
+	<episode no="3">
+		<scenario id="Intro">
+			<speech id="1" next_id="2">
+				<text talker="Lava King">I have enough of that SpongeBob! I cannot believe he made it through the forest and the reef. You will guard the Dead Lands and make sure he does not go further!</text>
+				<text talker="Lava King">My plans will not be thwarted. I'll take care of the sponge myself if I must.</text>
+			</speech>
+			<speech id="2" next_id="2">
+				<text talker="Lava King">I'll take care of the sponge myself.</text>
+			</speech>
+		</scenario>
+		<scenario id="Sandy">
+			<speech id="1" next_id="2">
+				<text talker="SpongeBob">Hi Sandy!</text>
+				<text talker="Sandy">Oh! Hi SpongeBob!</text>
+				<text talker="SpongeBob">What are you doing here?</text>
+				<text talker="Sandy">I lost one of my tools on my way here. Do you think you can find it for me?</text>
+				<text talker="SpongeBob">No problem!</text>
+				<text talker="Sandy">Thanks! See you later then!</text>
+			</speech>
+			<speech id="2" next_id="2">
+				<text talker="Sandy">Please come back with the tool.</text>
+			</speech>
+			<speech id="3" next_id="4">
+				<text talker="Sandy">Oh thank you! Here is a reward for you!</text>
+				<text talker="SpongeBob">Nice! A health extension!</text>
+			</speech>
+			<speech id="4" next_id="5">
+				<text talker="Sandy">I do not need anything else for now but thanks for asking!</text>
+			</speech>
+			<speech id="5" next_id="6">
+				<text talker="Sandy">I do not need anything else for now but thanks for asking!</text>
+			</speech>
+			<speech id="6" next_id="7">
+				<text talker="Sandy">I do not need anything else for now but thanks for asking!</text>
+			</speech>
+			<speech id="7" next_id="8">
+				<text talker="Sandy">I do not need anything else for now but thanks for asking!</text>
+			</speech>
+			<speech id="8" next_id="9">
+				<text talker="Sandy">I do not need anything else for now but thanks for asking!</text>
+			</speech>
+			<speech id="9" next_id="5">
+				<text talker="Sandy">SpongeBob doesn't have hair ... Or does he?</text>
+			</speech>			
+			<marker id="Tool">3</marker>
+		</scenario>
+		<scenario id="Squidward">
+			<speech id="1" next_id="1">
+				<text talker="Squidward">...</text>
+			</speech>
+			<speech id="2" next_id="3">
+				<text talker="Squidward">I had everything under control. It was all part of my plan.</text>
+				<text talker="SpongeBob">Nice! A health extension!</text>
+			</speech>
+			<speech id="3" next_id="3">
+				<text talker="Squidward">You should go now.</text>
+			</speech>
+			<marker id="Saved">2</marker>
+		</scenario>
+		<scenario id="New">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I've acquired the level 1 sword! I can use it to destroy seaweed.</text>
+			</speech>
+			<speech id="2" next_id="2">
+				<text talker="SpongeBob">I've acquired the level 2 sword! I can use it to destroy coral.</text>
+			</speech>
+			<speech id="3" next_id="3">
+				<text talker="SpongeBob">I've acquired the level 1 shield! It's assigned to the "1" hotkey.</text>
+			</speech>
+			<speech id="4" next_id="4">
+				<text talker="SpongeBob">I've acquired the level 2 shield! It's assigned to the "2" hotkey..</text>
+			</speech>
+			<speech id="5" next_id="5">
+				<text talker="SpongeBob">I've acquired a sea urchin! It is a secondary weapon that I can throw by pressing "S". To switch secondary weapon, I have to select it in the inventory or press its hotkey. The sea urchin is assigned to the "3" hotkey. Its ammunitions are limited, so I must use it wisely.</text>
+			</speech>
+			<speech id="6" next_id="6">
+				<text talker="SpongeBob">I've acquired a volcanic sea urchin. I can use it to blow up rocks and some other surfaces. It's assigned to the "4" hotkey. Its ammunitions are limited, so I must use it wisely.</text>
+			</speech>
+			<speech id="7" next_id="7">
+				<text talker="SpongeBob">I've acquired the three-pronged fork! It's assigned to the "5" hotkey.</text>
+			</speech>
+			<speech id="8" next_id="8">				
+				<text talker="SpongeBob">I've acquired the boomerang! I can use it to collect otherwise unreachable items! It's assigned to the "6" hotkey.</text>
+			</speech>
+			<speech id="9" next_id="9">
+				<text talker="SpongeBob">I've acquired the magic wand! I can use it to solidify certain parts of the lava river! It's assigned to the "7" hotkey.</text>
+			</speech>
+			<speech id="10" next_id="10">
+				<text talker="SpongeBob">Map.</text>
+			</speech>
+			<speech id="11" next_id="11">
+				<text talker="SpongeBob">Health Unit.</text>
+			</speech>
+			<speech id="12" next_id="12">
+				<text talker="SpongeBob">Health Bottle.</text>
+			</speech>
+			<speech id="13" next_id="13">
+				<text talker="SpongeBob">1 Money Unit.</text>
+			</speech>
+			<speech id="14" next_id="14">
+				<text talker="SpongeBob">5 Money Units.</text>
+			</speech>
+			<speech id="15" next_id="15">
+				<text talker="SpongeBob">10 Money Units.</text>
+			</speech>
+			<speech id="16" next_id="16">
+				<text talker="SpongeBob">Sandy Tool 1.</text>
+			</speech>
+			<speech id="17" next_id="17">
+				<text talker="SpongeBob">Sandy Tool 2.</text>
+			</speech>
+			<speech id="18" next_id="18">
+				<text talker="SpongeBob">Sandy Tool 3.</text>
+			</speech>
+			<speech id="19" next_id="19">
+				<text talker="SpongeBob">You've acquired a key.</text>
+			</speech>
+			<speech id="20" next_id="20">
+				<text talker="SpongeBob">I've acquired the first half of the boss' dungeon key!</text>
+			</speech>
+			<speech id="21" next_id="21">
+				<text talker="SpongeBob">I've acquired the second half of the boss' dungeon key!</text>
+			</speech>
+			<speech id="22" next_id="22">
+				<text talker="SpongeBob">I've acquired the boss' chamber key!</text>
+			</speech>
+			<speech id="23" next_id="23">
+				<text talker="SpongeBob">Health Container.</text>
+			</speech>
+			<speech id="24" next_id="24">
+				<text talker="SpongeBob">I've acquired Sandy's tool!</text>
+			</speech>
+			<marker id="1">1</marker>
+			<marker id="2">2</marker>
+			<marker id="3">3</marker>
+			<marker id="4">4</marker>
+			<marker id="5">5</marker>
+			<marker id="6">6</marker>
+			<marker id="7">7</marker>
+			<marker id="8">8</marker>
+			<marker id="9">9</marker>
+			<marker id="10">10</marker>
+			<marker id="11">11</marker>
+			<marker id="12">12</marker>
+			<marker id="13">13</marker>
+			<marker id="14">14</marker>
+			<marker id="15">15</marker>
+			<marker id="16">16</marker>
+			<marker id="17">17</marker>
+			<marker id="18">18</marker>
+			<marker id="19">19</marker>
+			<marker id="20">20</marker>
+			<marker id="21">21</marker>
+			<marker id="22">22</marker>
+			<marker id="23">23</marker>
+			<marker id="24">24</marker>
+		</scenario>
+		<!-- Special conditions -->
+		<scenario id="ChestKey">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I need a key to open this chest.</text>
+			</speech>
+		</scenario>
+		<scenario id="ChestKill">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I have to eliminate all enemies in the room for this chest to open.</text>
+			</speech>
+		</scenario>		
+		<scenario id="DoorKey">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I need a key to open this door.</text>
+			</speech>
+		</scenario>
+		<scenario id="DoorKill">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I have to eliminate all enemies in the room for this door to open.</text>
+			</speech>
+		</scenario>
+		<scenario id="DoorKillAndKey">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I have to eliminate all the enemies in the room and use a key to open this door.</text>
+			</speech>
+		</scenario>
+		<scenario id="DoorLair">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I need both halves of the key to open the boss's dungeon door. The other half is probably hidden in another dungeon.</text>
+			</speech>
+		</scenario>
+		<scenario id="DoorBoss">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">This is the boss's chamber. I need the boss's chamber key to open it. It should be hidden nearby.</text>
+			</speech>
+		</scenario>
+		<scenario id="NoMoney">
+			<speech id="1" next_id="1">
+				<text talker="Krab">You don't have enough money to buy this.</text>
+			</speech>
+		</scenario>
+		<scenario id="InventoryFull">
+			<speech id="1" next_id="1">
+				<text talker="Krab">Your inventory is full.</text>
+			</speech>
+		</scenario>
+		<scenario id="NoMoreItem">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">I cannot hold any more of this item.</text>
+			</speech>
+		</scenario>
+		<scenario id="EpisodeDoor1">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">(TBD) I have to wait until (date) to access to this door.</text>
+			</speech>
+		</scenario>
+		<scenario id="EpisodeDoor2">
+			<speech id="1" next_id="1">
+				<text talker="SpongeBob">(TBD) I have to wait until (date) to access to this door.</text>
+			</speech>
+		</scenario>
+	</episode>
+</data>

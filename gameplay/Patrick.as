@@ -1,4 +1,4 @@
-package gameplay
+﻿package gameplay
 {
    import flash.display.MovieClip;
    import flash.events.Event;
